@@ -1,0 +1,139 @@
+
+ 
+  .checked {
+    color: green;
+  }
+  .card1{
+    text-align: center;
+    border-left: 20px;
+    background-color:white;
+    color: black;
+    border-color: black;
+  }
+ 
+ 
+ 
+  ul.nav-underline {
+ 
+    margin-top: 70px;
+ 
+    /* top: 70px;  */
+ 
+    margin-left: 10px;
+ 
+    /* margin-bottom: 80px; */
+ 
+    margin-bottom: 20px;
+ 
+    right: -10px;
+ 
+   
+ 
+  }
+ 
+ 
+ 
+ 
+  ul.nav.nav-underline h5 {
+ 
+    color: grey;
+ 
+    margin-left: 10px;
+    margin-top: 1px;
+ 
+  }
+ 
+ 
+ 
+ 
+  .active-link-all {
+ 
+    text-decoration: underline;
+ 
+  }
+ 
+ 
+ 
+ 
+  .active-link-enter {
+ 
+    text-decoration: none; /* Remove underline for the "Enter Your Question" link */
+ 
+  }
+ 
+ 
+ 
+  a{
+    text-decoration: none;
+    color:#333;
+    font-weight: 500;
+  }
+  body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #dfe4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom:3px ;
+  }
+ 
+  li:after{
+    content: '';
+    margin: auto;
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: transparent;
+    /* transition: width 0.5s ease,background-color 0.5s ease; */
+    transition: all 0.5s ease;
+  }
+  li:hover:after{
+    width: 100%;
+    background-color:blue;
+  }
+  .first{
+   
+    background-color: pink;
+    width: 700px;
+  }
+  .second{
+    background-color: blue;
+    width: 100px;
+    display: flex;
+   
+ 
+  }
+  .third{
+    background-color: orange;
+   
+  }
+  .imp{
+    display: flex;
+ 
+   
+  }
+  .parent-container {
+    display: flex;
+    justify-content: flex-end; /* Align containers to the end of the parent */
+    margin-bottom: 800px;
+  }
+ 
+  .first-container {
+    flex: 70%; /* 70% width */
+    background-color: #be4747;
+  }
+ 
+  .second-container,
+  .third-container {
+    flex: 15%; /* 15% width each */
+    background-color: #c2c2c2;
+  }
+ 
+  /* Add styling as needed */
+ 

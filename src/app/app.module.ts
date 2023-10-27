@@ -4,15 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { SalesOverviewComponent } from './sales-overview/sales-overview.component';
+import { ChartModule } from 'angular-highcharts';
+import { HarvestiveComponent } from './harvestive/harvestive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent,
+    SalesOverviewComponent,
+    HarvestiveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
